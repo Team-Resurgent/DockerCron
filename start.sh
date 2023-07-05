@@ -1,12 +1,7 @@
 #!/bin/bash
 
-if [ -z "$SCHEDULER_ENVIRONMENT" ]; then
-   echo "SCHEDULER_ENVIRONMENT not set, assuming Development"
-   SCHEDULER_ENVIRONMENT="Development"
-fi
-
 # Select the crontab file based on the environment
-CRON_FILE="crontab.$SCHEDULER_ENVIRONMENT"
+CRON_FILE="crontab.sh"
 
 echo "Loading crontab file: $CRON_FILE"
 
