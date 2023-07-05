@@ -6,7 +6,7 @@ RUN apk add --update --no-cache bash dos2unix
 WORKDIR /usr/scheduler
 
 # Copy files
-COPY crontab.* ./
+COPY crontab.sh .
 COPY start.sh .
 
 # Fix line endings && execute permissions
